@@ -6,7 +6,7 @@
 form{
     margin: auto;
     width: 400px;
-    height:600px;
+    height:auto;
     background: silver;
     padding:20px;
 }

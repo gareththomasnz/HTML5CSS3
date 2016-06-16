@@ -2,6 +2,7 @@
 
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>HTML5 Forms</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,15 +14,15 @@
         <table>
             <tr>
                 <td>Name</td>
-                <td><input type="text" required="true"></td>
-            <tr>
+                <td><input type="text" required placeholder="    Insert Your Full Name Please" autofocus></td>
+            
             <tr>
                 <td>Email</td>
-                <td><input type="email"></td>
+                <td><input type="email" placeholder="    Insert Your Email Please"></td>
             </tr>
              <tr>
                 <td>Rate</td>
-                <td><input type="number" max="10" min="1"></td>
+                <td><input type="number" max="10" min="1" placeholder="    Please Rate Our Site"></td>
             </tr>
               <tr>
                 <td>Birthday</td>
@@ -29,11 +30,11 @@
             </tr>
              <tr>
                 <td>URL</td>
-                <td><input type="url"></td>
+                <td><input type="url" placeholder="    Insert Your URL Please"></td>
             </tr>
              <tr>
                 <td>Search</td>
-                <td><input type="search"></td>
+                <td><input type="search" placeholder="    Insert Your Search Term Please"></td>
             </tr>            
             <tr>
                 <td></td>
@@ -47,15 +48,22 @@
                 <td>Choose</td>
                 <td><input type="color"></td>
             </tr>
+               <tr>
+                <td>Upload Image</td>
+                <td><input type="file" multiple></td>
+            </tr>             
               <tr>
                 <td>Select</td>
-                <td><select>
-                    <option>English</option>
-                    <option>Spanish</option>
-                    <option>French</option>
-                    <option>German</option>
-                </select></td>
-            </tr>                
+                    <td>
+                        <input list="country_list" placeholder="    Select Your Language Please">
+                        <datalist id="country_list">
+                            <option>English</option>
+                            <option>Spanish</option>
+                            <option>French</option>
+                            <option>German</option>
+                        </datalist>
+                    </td>
+                </tr>                
         </table>
 
     </form> 
