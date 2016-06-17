@@ -3,6 +3,10 @@
     margin: 0;
     font-family:new-font;
 }
+body{
+    background:gray;
+    animation: anim1 1s;
+}
 #container{
     width: 1000px;
     margin: 0  auto;
@@ -73,10 +77,12 @@
                     border:black 1px solid;
                     margin: 5px 0;
                     padding:5px;
+                    transition: padding .5s;
                 }
                 .lists:hover{
                     background:silver;
                     color:black;
+                    padding:10px;
                 }
                 aside input{
                     width:280px;
@@ -129,4 +135,8 @@
 @font-face{
     font-family: new-font;
     src: url(Ubuntu-L.ttf);
+}
+@keyframes anim1{
+    to{ background: gray;}
+    from{ background: silver;}
 }
