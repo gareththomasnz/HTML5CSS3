@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+</head>
+
+<body>
+<h1>Drawing a Heading </h1>
+<canvas id="canvas1" style="border: 1px solid black; width: 300px; height: 300px;"></canvas>
+<h2>Drawing a line</h2>
+<canvas id="canvas2" style="border: 1px solid black; width: 300px; height: 300px;"></canvas>
+<script>
+//drawing canvas
+    var canvas_var = document.getElementById('canvas1');
+    var canvas = canvas_var.getContext('2d');
+    canvas.fillStyle = 'Brown';
+    canvas.fillRect(0,0,300,200);
+    
+//drawing a line
+    var canvas_id2 = document.getElementById('canvas2');
+    var canvas2 = canvas_id2.getContext('2d');
+    
+    canvas2.beginPath();
+    canvas2.moveTo(0,0);   
+    canvas2.lineTo(400,200);
+    canvas2.stroke();
+    
+    canvas2.beginPath();
+    canvas2.moveTo(0,150);   
+    canvas2.lineTo(300,0);
+    canvas2.stroke();    
+    
+</script>
+
+</body>
+</html>
